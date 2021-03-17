@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/* intuitivnejsi box-sizing */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: Rubik, sans-serif;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+.kontejner {
+    width: 670px;
+    height: 440px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #222222;
+    display: flex;
+    padding: 0;
+}
+
+.leva {
+    position: relative;
+    padding: 30px;
+    background-image: linear-gradient(to top, #50cc49 , #06d7c1);
+    border-radius: 10px 0 0 10px;
+    color: white;
+    flex: 0 0 45%;
+}
+
+.leva .foto {
+    position: absolute;
+    left: -120px;
+    bottom: 10px;
+}
+
+.leva p {
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.leva .info {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.leva .cena {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.leva .extra {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.prava {
+    flex: 0 0 55%;
+    padding: 30px;
+    position: relative;
+}
+
+.prava h1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.prava h2 {
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+}
+
+.prava p {
+    margin-bottom: 30px;
+}
+
+.poznamka {
+    color: #959595;
+}
+
+.prava hr {
+    border: 1px solid #06d7c1;
+}
+
+.prava ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.prava ul li {
+    padding: 5px;
+}
+
+ul .selected {
+    color: #f15f42;
+    border: 1px solid #f15f42;
+    border-radius: 100%;
+}
+
+.prava a {
+    display: inline-block;
+    color: white;
+    background-color: #f15f42;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
